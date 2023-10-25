@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <style>
+      body {
+        background-color: aliceblue;
+      }
+      h1 {
+        color: blue;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        margin: 5px;
+      }
+    </style>
+  </header>
+  <body>
+    <h1>Mad Libs!</h1>
+    <form action="/story">
+      <ul>
+        {{ lis | safe }}
+        <!-- generated HTML code injected here -->
+      </ul>
+      <button>Make Story</button>
+    </form>
+  </body>
+</html>
